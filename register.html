@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Register Page
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+
+    <body">
+        <div  id="register-container" >
+            <h1 id='title'>Registration Form</h1>
+            <form style="margin:auto; width: 500px;" onsubmit="return validate(document.getElementById('fname').value,document.getElementById('lname').value,document.getElementById('profession').value,document.getElementById('mobile_no').value, document.getElementById('email').value, document.getElementById('password').value, document.getElementById('confirm-password').value)" action="store_user.php" method = "post">
+                <div class="form-group">
+                    <input id="fname" type="text" class="form-control" name="fname" autocomplete="on" placeholder="First Name...">
+                    <br>
+                    <input id="lname" type="text" class="form-control" name="lname" autocomplete="on" placeholder="Last Name...">
+                    <br>
+                    <input id="profession" type="text" class="form-control" name="profession" autocomplete="on" placeholder="Profession...">
+                    <br>
+                    <input id="mobile_no" type="text" class="form-control" name="mobile_no" autocomplete="on" placeholder="Mobile Number...">
+                    <br>
+                    <input id="email" type="text" class="form-control" name="email" autocomplete="on" aria-describedby="emailHelp" placeholder="Email Address...">
+                    <br>
+                    <input id="password" type="password" class="form-control" name="password" autocomplete="on" placeholder="Password...">
+                    <br>
+                    <input id="confirm-password" type="password" autocomplete="on" class="form-control" name="confirm-password" placeholder="Confirm Password...">
+                </div>
+                <button id="register-button" type="submit" name="submit" class="btn btn-primary">Register</button>
+            </form>
+            <p id='log-link'>Back to <a id='log-link' href="index.html">Login</a></p>
+        </div>
+    </body>
+    <script src="scripts/register.js"></script>
+</html>
+
+

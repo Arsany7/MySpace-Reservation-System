@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Update Price
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+
+    <body">
+        <div id = "register-container" style="top: 80px;" >
+            <h1 id='title'>Update Table Price</h1>
+            <form style="margin:auto; width: 500px;" onsubmit="return validate(document.getElementById('table_id').value, document.getElementById('new_price').value)" action="changePrice.php" method = "POST">
+                <div class="form-group">
+                    <input id="table_id" type="text" class="form-control" name="table_id" autocomplete="on" placeholder="Table Id...">
+                    <br>
+                    <input id="new_price" type="text" class="form-control" name="new_price" autocomplete="on" placeholder="New Price...">
+                    <br>
+                </div>
+                <button id="register-button" type="submit" name="submit5" class="btn btn-primary">Update</button>.
+                <p id='log-link'>Back to <a id='log-link' href="adminHome.html">Admin Home</a></p>
+            </form>
+        </div>
+    </body>
+
+    <script src="scripts/changeprice.js"></script>
+</html>
+
+

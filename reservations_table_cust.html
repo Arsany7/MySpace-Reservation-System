@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>
+            Reservations
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+    <body>
+        <br><br><br><br><br>
+        <div style="position: relative; top: 130;">
+        <h1>Get reservations within specific period</h1>
+        <form id="register-container" method="post" onsubmit='return validateDateTime(document.getElementById("date").value, document.getElementById("start_time").value, document.getElementById("end_time").value)' action="reservations_table_cust.php">
+                <div id="form-group">
+                    <input id="date" type="text" class="form-control" name="date" placeholder="Date... (YYYY-MM-DD)">
+                    <br>
+                    <input id="start_time" type="text" class="form-control" name="start_time"  placeholder="Reservation Starts from... (HH 24-Hour-Format)">
+                    <br>
+                    <input id="end_time" type="text" class="form-control" name="end_time"  placeholder="Reservation Ends at... (HH 24-Hour-Format)">
+                    <br>
+                </div>
+                <button id="button" type="submit" name="submit" class="btn btn-primary">Search</button>
+                <p id='log-link'>Back to <a id='log-link' href="adminHome.html">Admin Home</a></p>
+            </form>
+        </div>
+    </body>
+
+    <script src="scripts/reservations_table_cust.js"> </script>
+
+    </html>
+
+

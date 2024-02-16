@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Add Table
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+
+    <body">
+        <div id="register-container" style="top: 80px;">
+            <h1 id='title'>Table Creation Form</h1>
+            <form style="margin:auto; width: 500px;" onsubmit="return validate(document.getElementById('category').value, document.getElementById('number_of_seats').value, document.getElementById('price_per_hour').value, document.getElementById('branch_id').value)" method = "POST">
+                <div class="form-group">
+                    <input id="category" type="text" class="form-control" name="category" autocomplete="on" placeholder="Category...">
+                    <br>
+                    <input id="number_of_seats" type="text" class="form-control" name="number_of_seats" autocomplete="on" placeholder="Number of seats...">
+                    <br>
+                    <input id="price_per_hour" type="text" class="form-control" name="pricePerHour" autocomplete="on" placeholder="Price per hour...">
+                    <br>
+                    <input id="branch_id" type="text" autocomplete="on" class="form-control" name="branch_id" placeholder="Branch ID...">
+                </div>
+                <button id="register-button" type="submit" name="submit" class="btn btn-primary">Add Table</button>
+                <p id='log-link'>Back to <a id='log-link' href="adminHome.html">Admin Home</a></p>
+            </form>
+        </div>
+    </body>
+
+    <script src="scripts/addtable.js"></script>
+</html>

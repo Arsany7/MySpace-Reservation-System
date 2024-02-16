@@ -1,0 +1,138 @@
+img.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background-size: auto;
+    height: 100%;
+
+    }
+body
+{
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+h1 {
+    text-align: center; 
+    font-weight: bold; 
+    position: relative; 
+    color:#ffffff;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 100px;
+}
+h1.login-title {
+    color:white;
+    margin: 0px auto 25px;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+}
+h2{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+h3 {
+    font-weight: bold; 
+    position: relative; 
+    color:#ffffff;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 60px;
+}
+#button{
+    background-color: #f8f8f8;
+    color: black; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    position: relative; 
+
+}
+label[for="admin"] {
+    color: #ffffff; 
+}
+label[for="user"] {
+    color: #ffffff; 
+}
+#login-form {
+    margin:auto; 
+    width: 500px;
+}
+#register-link {
+    position: relative; 
+    top: 80px; 
+    left:730px;
+    color: white;
+    font-weight: bold;
+}
+#log-link {
+    position: relative; 
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#register-button {
+    background-color: white;
+    color: black; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-top: 20px;
+}
+#reserve-button{
+    background-color: black;
+    color: white; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 5px 5px; 
+    cursor: pointer; 
+}
+#register-container {
+    position: relative;
+    width: 500px;
+    margin: 0px auto;
+    top: 10px; 
+    text-align: center; 
+}
+
+#title {
+    text-align: center; 
+}
+.custom-table th {
+    font-family: 'Your Custom Font', Arial, sans-serif;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Custom styles for alternating rows */
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #dee2e6;
+}
+
+
+.form {
+    margin: 70px auto;
+    width: 400px;
+    padding: 40px 30px;
+    background: rgb(165, 156, 167) ;
+    border: 2px solid #cccc;
+}
+.login-button{
+    color:  rgb(165, 156, 167);
+    background: white;
+    border: 0;
+    font-weight: bold;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}

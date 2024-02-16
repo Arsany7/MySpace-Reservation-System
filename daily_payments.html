@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>
+            Daily Payments
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+    <body>
+        <br><br><br><br><br>
+        <div>
+            <h1>Get Daily Payments within specific period</h1>
+            <form id = "register-container" method="post" onsubmit="return function2(document.getElementById('start2').value, document.getElementById('end2').value)" action="daily_payments.php">
+                <div class="form-group">
+                    <input id="start2" type="text" class="form-control" name="start2" placeholder="Start Date...">
+                    <br>
+                    <input id="end2" type="text" class="form-control" name="end2"  placeholder="End Date...">
+                    <br>
+                </div>
+                <button id="button" type="submit" name="submit2" class="btn btn-primary">Search</button>
+                <p id='log-link'>Back to <a id='log-link' href="adminHome.html">Admin Home</a></p>
+            </form>
+        </div>
+    </body>
+
+<script  src="scripts/daily_payments.js"></script>
+
+</html>
+
+

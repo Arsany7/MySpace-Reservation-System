@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <title>
+            Table Status
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript"></script>
+        <link href="stylefile.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    </head>
+    <body>
+
+        <div style="position: relative;">
+            <br><br><br><br><br>
+            <h1>Table Status At Specific Day</h1>
+            <form id="register-container" name="status" method="post" onsubmit='return validateDate(document.getElementById("date").value)' action="status.php">
+                <div class="form-group">
+                    <input class="form-control" id = "date" type="string" name="date" placeholder="Day's date...">
+                </div>
+                <button id="button" type="submit" name="submit3" class="btn btn-primary">Search</button>
+                <p id='log-link'>Back to <a id='log-link' href="adminHome.html">Admin Home</a></p>
+            </form>
+        </div>
+    </body>
+
+    <script  src="scripts/table_status.js"></script>
+    </html>
+
+
